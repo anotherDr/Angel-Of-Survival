@@ -1,0 +1,136 @@
+$mainTextColor: midnightblue;
+
+* {
+	box-sizing: border-box;
+}
+*:active, *:focus {
+	outline: none;
+}
+body {
+	background-color: #dbdbdb;
+	padding: 20px 40px;
+	color: $mainTextColor;
+}
+
+h1, i {
+	text-shadow: 1px 1px ghostwhite;
+}
+
+section {
+	margin: 0 0 16px;
+}
+.timer {
+	width: 320px;
+	
+	&__params {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		justify-items: stretch;
+		
+		div {
+			margin: 0 32px 16px 0;
+			
+			&:last-child {
+				margin: 0 0 16px;
+			}
+		}
+		
+		label {
+			font-size: .9rem;
+			display: block;
+			line-height: normal;
+			margin: 0 0 8px;
+		}
+		
+		
+		input {
+			width: 100%;
+			padding: 4px 8px;
+			border: 0 none;
+			border-bottom: 1px solid ;
+			background: rgba(255, 255, 255, 0.25);
+			
+			&:focus {
+				background: #fff;
+			}
+		}
+	}
+	
+	&__panel {
+		display: flex;
+		align-items: center;
+		justify-items: stretch;
+		justify-content: space-around;
+		
+		border: 1px solid $mainTextColor;
+		padding: .4em .6em;
+		border-radius: 8px;
+		background: #f1ece2;
+		box-shadow: 0px 4px 8px #8a8a8a inset;
+		background-image: linear-gradient(180deg, white 33%, #999);
+		
+	}
+	
+	&__scoreboard {
+		display: inline-block;
+		
+		font-size: 4em;
+		text-align: center;
+		
+		text-shadow: 1px 1px ghostwhite;
+	}
+	
+	&__controls {
+		display: inline-block;
+		
+		div {
+			display: inline-block;
+			margin: 0 4px;
+		}
+		
+		i {
+			font-size: 1.6em;
+			margin: 4px 0;
+			cursor: pointer;
+			
+			&:hover {
+				color: crimson;
+			}
+			
+			&.active {
+				color: #4caf50;
+			}
+		}
+	}
+	
+	&__status-panel {
+		text-align: center;
+		margin: 24px auto 16px;
+		font-size: 2em;
+		text-shadow: 1px 1px ghostwhite;
+		color: green;
+		font-weight: 700;
+	}
+	
+	&__status-msg {
+		transition: all 1.8s;
+		opacity: 0;
+		
+		&.work {
+			color: #2196F3;
+		}
+		&.rest {
+			color: #008000;
+		}
+		
+		&.active {
+			opacity: 1;
+		}
+	}
+	
+}
+
+
+
+

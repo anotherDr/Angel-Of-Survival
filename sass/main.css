@@ -1,0 +1,24 @@
+body {
+	background-color: floralwhite;
+	padding: 20px 40px;
+	color: midnightblue;
+}
+
+h1 {
+	text-shadow: 1px 1px ghostwhite;
+}
+
+section {
+	margin: 0 0 16px;
+}
+
+.timer {
+	border: 1px solid midnightblue;
+	padding: 16px;
+	border-radius: 4px;
+	font-size: 4em;
+	text-align: center;
+	background: #f1ece2;
+	box-shadow: 0px 6px 24px #8a8a8a inset;
+	text-shadow: 1px 1px ghostwhite;
+}

@@ -1,0 +1,10 @@
+.idea
+.vscode
+node_modules
+node_modules/*.*
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/webpack_4__vue.iml
+.idea/workspace.xml
+.idea/vcs.xml

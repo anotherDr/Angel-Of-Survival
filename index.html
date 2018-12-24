@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Developer's Angel Of Survival ver.0.0.1</title>
+	<link rel="stylesheet" href="./css/all.min.css">
+	<!--<link rel="stylesheet" href="./css/styles.css">-->
+	<link rel="stylesheet" href="./dist/main.css">
+</head>
+<body>
+	<h1>Developer's <br/>Angel Of Survival</h1>
+	
+	<section id="timer" class="timer">
+		
+		<div class="timer__params">
+			<div>
+				<label>Enter time for work</label>
+				<input id="timer__work-time" type="text" placeholder="min"/>
+			</div>
+			<div>
+				<label>Enter time for relax</label>
+				<input id="timer__rest-time" type="text" placeholder="min"/>
+			</div>
+		</div>
+		
+		<div class="timer__panel">
+				<div class="timer__scoreboard">
+				<span id="min">00</span>
+				<span class="colon"> : </span>
+				<span id="sec">00</span>
+			</div>
+			
+			<div class="timer__controls">
+				<div>
+					<i id="playBtn" class="fas fa-play"></i>
+				</div>
+				<div>
+					<i id="stopBtn" class="fas fa-stop"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="timer__status-panel">
+			<span id="timer__status-msg" class="timer__status-msg"></span>
+		</div>
+	</section>
+	
+	<!--<script src="/dist/main-bundle.js"></script>-->
+	<script>
+		require("./dist/main-bundle.js")
+	</script>
+</body>
+</html>

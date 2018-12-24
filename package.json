@@ -1,0 +1,36 @@
+{
+  "name": "angel__01",
+  "version": "0.0.1",
+  "description": "first electron app",
+  "main": "index.js",
+  "author": "Amadeus",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "webpack --config=config/webpack.config.js --env.NODE_ENV=production",
+    "watch": "webpack --config=config/webpack.config.js --watch",
+    "dev": "webpack-dev-server --config=config/webpack.config.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "electron": "^3.0.13",
+    "moment": "^2.23.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.2.6",
+    "vue-style-loader": "^4.1.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
